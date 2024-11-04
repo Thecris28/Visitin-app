@@ -1,0 +1,80 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar class="tamanio">
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()"><img class="atras-img" color="medium" src="../assets/back.png" alt=""></ion-button>
+    </ion-buttons>
+    <h3 class="nav_titulo">DETALLE VISITA</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <main>
+    <section class="contenedor">
+      <h2 class="titulo">Datos Personales</h2>
+      <div class="detalles" color="light" >
+        <div class="margen">
+          <p class="label"><strong>Nombre</strong></p>
+          <p class="label">{{dato[0].nombre}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Rut</strong></p>
+          <p class="label">{{dato[0].rut}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Fecha de nacimiento</strong></p>
+          <p class="label">{{dato[0].fecha_nac}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Correo</strong></p>
+          <p class="label">{{dato[0].correo }}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Teléfono de contacto</strong></p>
+          <p class="label">{{dato[0].telefono }}</p>
+        </div>
+      </div>
+    </section> 
+
+    <section class="contenedor">
+      <h2 class="titulo">Datos Visita</h2>  
+      <div class="detalles">
+        <div class="margen">
+          <p class="label"><strong>Motivo de la visita</strong></p>
+          <p class="label">{{dato[0].direccion}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Direccion</strong></p>
+          <p class="label">{{dato[0].direccion}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Ciudad</strong></p>
+          <p class="label">{{dato[0].ciudad + ', Chile'}}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Fecha</strong></p>
+          <p class="label">{{dato[0].fecha }}</p>
+        </div>
+        <div class="margen">
+          <p class="label"><strong>Hora visita</strong></p>
+          <p class="label">{{dato[0].telefono }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contenedor">
+      <h2 class="titulo">Información Adicional</h2>
+      <div class="detalles">
+        <div class="margen">
+          <p class="label"><strong>Observaciones previas</strong></p>
+          <p class="label">{{dato[0].telefono }}</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  
+
+</ion-content>
+

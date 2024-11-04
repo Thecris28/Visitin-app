@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <header class="contenedor">
+    <div>
+      <img src="../assets/av-9.png" alt="">
+    </div>
+    <section class="textos">
+      <strong class="saludo"> BIENVENIDA </strong>
+      <br>
+      <strong class="titulo">{{nombre |titlecase}} {{apellido| titlecase}}</strong>
+      <br>
+      <ion-text  class="cargo" color="medium">{{cargo}}</ion-text>
+    </section>
+  </header>
+  <main>
+    <div class="menu">
+      <div class="menu-item" >
+          <span class="icon">🚨</span>
+          <span class="text">Emergencia</span>
+      </div>
+      <div class="menu-item" routerLink="/lista-visita">
+        <span class="icon">📋</span>
+        <span class="text">Lista de visitas</span>
+      </div>
+      <div class="menu-item">
+        <span class="icon">➕</span>
+        <span class="text">Registrar visita</span>
+      </div>
+      <div class="menu-item">
+          <span class="icon">📝</span>
+          <span class="text">Notas</span>
+      </div>
+      <div class="menu-item">
+          <span class="icon">👤</span>
+          <span class="text">Perfil</span>
+      </div>
+      <div class="menu-item" routerLink="/login">
+          <span class="icon">❌</span>
+          <span class="text">Cerrar sesión</span>
+      </div>
+  </div>
+  </main>
+
 </ion-content>

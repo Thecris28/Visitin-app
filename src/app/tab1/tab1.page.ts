@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
+  nombre: string = 'Constanza';
+  apellido: string = 'Palacios';
+  cargo: string = 'Asistente social';
+  correo: string = '0e2Oq@example.com';
+
   constructor() {}
 
 }

@@ -1,0 +1,76 @@
+
+.contenedor{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+img{
+    width: 100px;
+}
+
+.saludo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #F86F6F;
+}
+.titulo{
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #525F7F;
+}
+.cargo{
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #525F7F;
+    padding-inline: 10px;
+    border-radius: 8px;
+    font-weight: 200;
+}
+.menu{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    margin-top: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: 40px auto;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    // background-color: #f9f9fb;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #F86F6F;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #4a4a7a;
+}
+
+.text {
+    font-size: 1.2rem;
+    // color: #4a4a7a;
+}
+ion-list{
+    --inner-padding-end: 0px;
+}
